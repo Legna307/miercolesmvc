@@ -1,13 +1,21 @@
 ﻿@{
     ViewBag.Title = "Contact";
 }
-<h2>@ViewBag.Title.</h2>
+<style type="text/css">
+    body {
+        background-color: red;
+        font-family: 'Comic Sans MS';
+        color:white;
+        margin: 50px;
+    }
+</style>
 <h3>@ViewBag.Message</h3>
-
+@Html.ActionLink("Inicio", "Index")
 <direccion>
+    Zumalacarragüi
     Gijón<br />
     Asturias, 33212<br />
-    <abbr title="TLF">P:</abbr>
+    <abbr title="Telefono">P:</abbr>
     999888777
 </direccion>
 
@@ -15,3 +23,4 @@
     <strong>Support:</strong>   <a href="mailto:Support@example.com">Support@example.com</a><br />
     <strong>Marketing:</strong> <a href="mailto:Marketing@example.com">Marketing@example.com</a>
 </direccion>
+

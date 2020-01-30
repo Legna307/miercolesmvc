@@ -15,7 +15,7 @@ namespace miercolesmvc.Controllers
         private ContextoEmpleados db = new ContextoEmpleados();
 
         // GET: Empleadin
-        public ActionResult Index()
+        public ActionResult Registro()
         {
             return View(db.Empleados.ToList());
         }
@@ -123,5 +123,26 @@ namespace miercolesmvc.Controllers
             }
             base.Dispose(disposing);
         }
+
+
+        public ActionResult Index()
+        {
+            return View();
+        }
+
+        public ActionResult About()
+        {
+            ViewBag.Message = "Descripcion de la pagina.";
+
+            return View();
+        }
+
+        public ActionResult Contact()
+        {
+            ViewBag.Message = "Pagina de Contacto.";
+
+            return View();
+        }
     }
 }
+
